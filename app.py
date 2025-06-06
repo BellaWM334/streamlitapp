@@ -66,17 +66,7 @@ if uploaded_file is not None:
         st.dataframe(df, use_container_width=True)
 else:
     st.info("Note: Please input a file to start!!!")
-    try:<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-<rect width="32" height="32" rx="8" fill="#0D0D0D" fill-opacity="0.5"/>
-<path d="M16.7491 13.5244C16.9453 13.3351 17.257 13.338 17.4497 13.5307L18.5937 14.6747C18.7865 14.8675 18.7893 15.1792 18.5999 15.3754L11.5512 22.6792C11.3571 22.8804 11.0356 22.8832 10.8379 22.6855L9.43649 21.2841C9.23872 21.0863 9.24163 20.7648 9.44294 20.5706L16.7491 13.5244Z" stroke="white" stroke-width="1.5"/>
-<path d="M14.5 15.4998L16.5 17.4998" stroke="white" stroke-width="1.5"/>
-<path d="M16.25 9V10.75" stroke="white" stroke-width="1.5" stroke-linecap="round"/>
-<path d="M21.2374 10.7627L20 12.0001" stroke="white" stroke-width="1.5" stroke-linecap="round"/>
-<path d="M21.2374 20.7501L20 19.5127" stroke="white" stroke-width="1.5" stroke-linecap="round"/>
-<path d="M11.25 10.7627L12.4874 12.0001" stroke="white" stroke-width="1.5" stroke-linecap="round"/>
-<path d="M21.25 15.75H23" stroke="white" stroke-width="1.5" stroke-linecap="round"/>
-</svg>
-
+    try:
         st.session_state.messages = []
     except:
         pass
