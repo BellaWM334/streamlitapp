@@ -35,7 +35,7 @@ def get_ai_response(client, user_prompt, system_prompt):
             temperature=0.7, # Adjust for creativity vs. factuality
             # max_tokens=500, # Optional: limit response length
         )
-        st.write(response.choices[0])
+        #st.write(response.choices[0])
         return response.choices[0].message.content
     except Exception as e:
         st.error(f"Error communicating with the AI: {e}")
