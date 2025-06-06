@@ -79,6 +79,14 @@ with st.sidebar.expander("**How to use:**", True):
         4. You do not need to return data parsed by CSV Base64
         """)
 
+    st.download_button(
+        label="Download example csv file",
+        data=csv,
+        file_name='ai_dev_productivity.csv',
+        mime='text/csv',
+        use_container_width=True
+    )
+
 client = None
 if base_url: # API key is now hardcoded, only check for base_url
     try:
